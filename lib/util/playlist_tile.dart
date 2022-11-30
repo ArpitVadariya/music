@@ -15,9 +15,9 @@ class PlayListTile extends StatelessWidget {
       child: Row(
         children: [
           InkWell(
-            // onTap: () {
-            // Navigator.pushNamed(context, "playlistpage");
-            // },
+            onTap: () {
+              Navigator.pushNamed(context, "playlistpage");
+            },
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image.asset(
