@@ -27,9 +27,9 @@ class MusicTile extends StatelessWidget {
           // it is size between image and song detail(like name artist length)
           SizedBox(width: 15),
           InkWell(
-            // onTap: () {
-            //   Navigator.pushNamed(context, "musicpage");
-            // },
+            onTap: () {
+              Navigator.pushNamed(context, "musicpage");
+            },
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
