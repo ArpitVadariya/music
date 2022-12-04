@@ -44,17 +44,17 @@ class MusicList extends StatelessWidget {
                 child: Text("Nathi Ela Geet"),
               );
             }
-
+            List<SongModel> songs = item.data!;
             return ListView.builder(
                 itemCount: item.data!.length,
                 itemBuilder: (context, index) {
                   return MusicTile(
-                    name: item.data![index].displayNameWOExt,
-                    title: item.data![index].title,
-                    subtitle: item.data![index].artist,
-                    album: (item.data![index].album).toString(),
+                    name: songs[index].displayNameWOExt,
+                    title: songs[index].title,
+                    subtitle: songs[index].artist,
+                    album: (songs[index].album).toString(),
                     leading: QueryArtworkWidget(
-                      id: item.data![index].id,
+                      id: songs[index].id,
                       type: ArtworkType.AUDIO,
                     ),
                   );
