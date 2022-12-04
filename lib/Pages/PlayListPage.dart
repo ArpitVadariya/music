@@ -157,9 +157,9 @@ class PlayListPage extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 // now all song listed
-                MusicTile(),
-                MusicTile(),
-                MusicTile(),
+                // MusicTile(),
+                // MusicTile(),
+                // MusicTile(),
               ],
             ),
           ),
