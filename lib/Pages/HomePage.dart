@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 6,
+      // this length is total number of fragments
+      // that how many fragments you have to create
+      length: 3,
       child: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -117,7 +119,8 @@ class HomePage extends StatelessWidget {
                   ),
                   TabBar(
                     isScrollable: true,
-                    labelStyle: TextStyle(fontSize: 18),
+                    labelStyle: TextStyle(fontSize: 25),
+                    labelPadding: EdgeInsets.only(left: 20, right: 20),
                     indicator: BoxDecoration(
                       border: Border(
                         bottom: BorderSide(
@@ -128,11 +131,8 @@ class HomePage extends StatelessWidget {
                     ),
                     tabs: [
                       Tab(text: "Music"),
-                      Tab(text: "Playlist"),
-                      Tab(text: "Favourites"),
-                      Tab(text: "Music"),
-                      Tab(text: "Playlist"),
-                      Tab(text: "Favourites"),
+                      Tab(text: "Playlists"),
+                      Tab(text: "Favourite"),
                     ],
                   ),
                   Flexible(
@@ -142,9 +142,6 @@ class HomePage extends StatelessWidget {
                         MusicList(),
                         PlayList(),
                         MusicList(),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
                       ],
                     ),
                   )
