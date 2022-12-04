@@ -60,7 +60,7 @@ class PlayListPage extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
-                    "images/Avengers.jpg",
+                    "images/Background.jpg",
                     width: 250,
                     height: 260,
                     fit: BoxFit.cover,
