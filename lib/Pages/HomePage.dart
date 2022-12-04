@@ -24,12 +24,12 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.transparent,
           body: SafeArea(
             child: Padding(
-              padding: EdgeInsets.only(top: 20, left: 22),
+              padding: EdgeInsets.only(top: 20, left: 10, right: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(right: 15),
+                    padding: EdgeInsets.only(right: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(height: 30),
                   Padding(
-                    padding: EdgeInsets.only(bottom: 5),
+                    padding: EdgeInsets.only(bottom: 5, left: 10),
                     child: Text(
                       "Arpit",
                       style: TextStyle(
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(bottom: 5),
+                    padding: EdgeInsets.only(bottom: 5, left: 10),
                     child: Text(
                       "Kya Chahiye re tereko?",
                       style: TextStyle(
@@ -76,7 +76,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 15, right: 20, bottom: 20),
+                    padding: EdgeInsets.only(
+                        top: 15, right: 20, bottom: 20, left: 10),
                     child: Container(
                       height: 50,
                       width: 380,
@@ -89,6 +90,7 @@ class HomePage extends StatelessWidget {
                         children: [
                           Container(
                             margin: EdgeInsets.symmetric(horizontal: 15),
+                            padding: EdgeInsets.only(left: 10),
                             height: 50,
                             width: 200,
                             child: TextFormField(
