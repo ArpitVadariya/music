@@ -21,7 +21,7 @@ class PlayListTile extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image.asset(
-                "images/Avengers.jpg",
+                "images/Background.jpg",
                 fit: BoxFit.cover,
                 height: 60,
                 width: 60,
@@ -32,21 +32,31 @@ class PlayListTile extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "PlayList Name",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, "playlistpage");
+                },
+                child: Text(
+                  "PlayList Name",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ),
               // size between playlist name and total of song number
               SizedBox(height: 5),
-              Text(
-                "30 Songs",
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.5),
-                  fontSize: 12,
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, "playlistpage");
+                },
+                child: Text(
+                  "30 Songs",
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.5),
+                    fontSize: 12,
+                  ),
                 ),
               ),
             ],
