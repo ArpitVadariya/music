@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:music/Pages/MusicPage.dart';
+import 'package:music/home_page.dart';
 import 'package:music/widgets/PlayList.dart';
 import 'Pages/HomePage.dart';
 import 'Pages/PlayListPage.dart';
@@ -14,10 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      // home: Home(title: 'Arpit'),
+      // home: Home(),
       routes: {
         "/": (context) => HomePage(),
         "playlistpage": (context) => PlayListPage(),
+        "musicpage": (context) => MusicPage(),
       },
     );
   }
