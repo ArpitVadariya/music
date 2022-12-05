@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music/home_page.dart';
 import 'package:on_audio_query/on_audio_query.dart';
-import '../util/music_tile.dart';
+import 'package:music/util/music_tile.dart';
 
 class MusicList extends StatelessWidget {
   MusicList({super.key});
